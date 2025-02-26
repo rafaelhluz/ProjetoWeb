@@ -1,0 +1,292 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+
+
+/* Cabeçalho */
+#header1 {
+    background-color: black;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    height: 50px;
+}
+
+#header1 li a {
+    color: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    color: #2e7d32;
+    
+}
+
+h1 {
+    margin: -5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Banner */
+.banner {
+    background: url('imgs/1.jpg') no-repeat center center/cover;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    flex-direction: column;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.banner p {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.banner a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2e7d32;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.banner a:hover {
+    /* background-color: #81c784; */
+    backdrop-filter: blur(25px);
+}
+
+/* Formulário de login */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-section input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.login-section button {
+    background-color: #0073e6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-section button:hover {
+    background-color: #005bb5;
+}
+
+/* Seções Gerais */
+section {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2e7d32;
+}
+
+/* Página Sobre */
+.sobre-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-container iframe {
+    width: 80%;
+    height: 400px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.sobre-container p {
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Página Reciclagem */
+.reciclagem-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reciclagem-container iframe {
+    width: 80%;
+    height: 400px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Carrossel */
+.carrossel {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+
+.carrossel img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.carrossel-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.carrossel-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Página Contato */
+.contato {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #2e7d32;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #81c784;
+}
+
+footer {
+    background-color: #2e7d32;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    max-height: 50px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: black;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-body-tertiary-custom {
+    --bs-bg-opacity: 1;
+    background-color: black !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #68ff70 !important;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff !important;
+} 
